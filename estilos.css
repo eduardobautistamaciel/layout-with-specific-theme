@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/fondoAUF.jpg);
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+section {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+header, nav, main, footer, #introEquipo {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #90d0e9;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+h1, #introEquipo p, #menuhorizontal ul li a, #sectionNoticias article a, #sectionNoticias article a:hover {
+    color: white;
+}
+
+#sectionNoticias h1, #sectionParticipantes h1, #resultados h1 {
+    width: 100%;
+}
+
+#menuhorizontal, footer {
+    background-color: #42b6e5;
+}
+
+#resultados img, #sectionParticipantes img {
+    border-radius: 50%;  /*Convierte las fotos en circulos*/
+    width: 100px;
+}
+
+/***Header***/
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/***NAV - Menu Horizontal***/
+
+#menuhorizontal {
+    font-size: 0px; /*para que los enlaces queden pegados*/
+    text-align: center;
+    list-style-type: none;
+}
+
+#menuhorizontal ul li {
+    display: inline-block;
+}
+
+#menuhorizontal ul li a {
+    font-size: 18px;
+    display: block;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;   /* Saca el subrayado de la palabra */  
+}
+
+#menuhorizontal ul li a:hover {
+    background-color: #007bff;
+    box-shadow: 5px 5px 10px black;
+}
+
+/***Intro equipo***/
+
+#introEquipo {
+    height: 400px;
+    text-align: center;
+    background: url(img/uruguay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#introEquipo h1 {
+    margin: 0 200px;
+    padding: 20px 100px;
+    text-shadow: 5px 5px 10px black;
+}
+
+#introEquipo p {
+    font-size: 19px;
+    margin: 0 200px;
+    padding: 10px 130px;
+}
+
+p#subInfo {
+    color: #F01C26;
+    padding: 8px 50px 100px 190px;
+}
+
+/***Noticias***/
+
+#sectionNoticias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionNoticias article {
+    flex: 1; /* ponemos flex para que ocupe los articulo en una celda */
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#sectionNoticias img {
+    width: 270px;
+}
+
+/**Boton Ampliar**/
+
+#sectionNoticias article a {
+    display: block;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(201, 11, 11);
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none; /* Saca el subrayado de la palabra */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#sectionNoticias article a:hover {
+    background-color: rgb(31, 126, 143);
+    box-shadow: 5px 5px 10px black;
+}
+
+/***Participantes***/
+
+#sectionParticipantes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionParticipantes img {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#sectionParticipantes h2 {
+    font-size: 21px;
+}
+
+#sectionParticipantes article {
+    width: calc(100% / 4 - 20px);
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sectionParticipantes img:hover {
+    width: 270px;
+}
+
+/***Partidos***/
+
+#resultados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+#resultados h2, #proximoPartido h2 {
+    Padding: 20px;
+}
+
+#resultados article {
+    padding: 30px;
+}
+
+/**Tabla**/
+
+table, th, td {
+    text-align: center;
+    padding: 5px;
+}
+
+table {
+    width: 450px;
+    margin: 20px auto;
+    border-spacing: 7px;
+}
+
+tr:nth-child(2), tr:nth-child(3), tr:nth-child(6), tr:nth-child(7) {
+    background-color: rgb(192, 233, 245);
+}
+
+tr:nth-child(4), tr:nth-child(5) {
+    background-color: rgb(90, 211, 248);
+}
+
+tr:first-child th {
+    background-color: white;
+}
+
+/**Proximo Partido**/
+
+#proximoPartido div {
+    background-color: rgb(109, 208, 233);
+}
+
+#proximoPartido h3, #proximoPartido h4, #proximoPartido div, #proximoPartido figure {
+    text-align: center;
+    Padding: 10px;
+}
+
+#proximoPartido figure {
+    width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#proximoPartido figcaption {
+    color: black;
+    font-weight: bold;
+}
+
+#proximoPartidoarticle img {
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+}
+
+/***Galeria***/
+
+#galeria div {
+    text-align: center;
+}
+
+#galeria figure {
+    width: 240px;
+    margin: 5px auto;
+    display: inline-block;
+}
+
+#galeria figure img {
+    width: 200px;
+    border: solid 1px lightgray;
+    margin: 5px 7px;
+    padding: 2px;
+}
+
+#galeria figcaption {
+    width: 180px;
+    padding: 10px;
+}
+
+/***Formulario***/
+
+#inscribirme {
+    background-color: #9bc0ce;
+    margin-bottom: 0;
+}
+
+#inscribirme h1 {
+    text-align: center;
+    color: rgb(20, 114, 236);
+    font-size: 30px;
+}
+
+#inscribirme article {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#inscribirme h2 {
+    padding: 20px;
+    text-align: right;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(197, 10, 10);
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 15px 10px 0;
+}
+
+textarea {
+    width: calc(100% - 30px);
+}
+
+#inscribirme div {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0 5px 0 20px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    width: 190px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+input:focus {
+    outline: none;
+    background-color: lightgray;
+}
+
+/***Footer****/
+
+footer {
+    list-style-type: none;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer img {
+    width: 40px;
+    padding: 0px 5px; /* para dar espacio entre los icones */
+}
+
+footer img:hover {
+    width: 60px;
+}
